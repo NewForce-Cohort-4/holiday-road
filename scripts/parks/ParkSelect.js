@@ -32,6 +32,5 @@ export const ParkSelect = () => {
         </select>
     `
     }
-
     render(parksCollection)
 }
