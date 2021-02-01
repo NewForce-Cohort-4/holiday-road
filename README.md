@@ -35,17 +35,20 @@ After each teammate clone the repository, each must perform the following steps.
 * List all eateries in a dropdown. When user chooses one, display the name of the eatery in the **Itinerary Preview** section.
 
 ### Itinerary Details
-
-* In the **Itinerary Preview** section, there should be a button labeled _Save Itinerary_. It should be disabled by default.
 * When the user has selected a park, and the name of the park has been added to the **Itinerary Preview** section, query the Open Weather API and display the 5 day forecast for that location. This will allow the user to see if they want to make the trip soon.
 * When the user adds any item to the **Itinerary Preview**, there should be a _Details_ button next to the name of the item.
-
 * When the user clicks on any detail button for an itinerary item, a dialog box should be presented to the user with more information about that item _(description, address, etc...)_.
-* Once the user has selected a park, a bizarre attraction, and an eatery, the _Save Itinerary_ button should be enabled.
+
+
+### Stretch Goal: Saving Iteneraries
+* In the **Itinerary Preview** section, there should be a button labeled _Save Itinerary_. 
 * When the user clicks the _Save Itinerary_ button, the chosen items should be saved as an object in your own, local API that is managed by `json-server`. Each saved itinerary should appear in an aside bar on the right side of the UI.
 
-### Stretch Goal: Directions
+### Stretch Goal: Disabled Save Button
+* The _Save Itinerary_ should be disabled by default.
+* Once the user has selected a park, a bizarre attraction, and an eatery, the _Save Itinerary_ button should be enabled.
 
+### Stretch Goal: Directions
 Only after the main fetures of the application listed above are complete, you can work on the stretch goal of providing directions. For this feature, you will be using the Graphhopper API.
 
 Once the user has saved an itinerary, and it is listed on the aside bar, refactor your application to add a _Get Directions_ button to each HTML representation of the itinerary. When the user clicks that button for an itinerary, the user should be presented with step-by-step instructions for the trip. It should include
